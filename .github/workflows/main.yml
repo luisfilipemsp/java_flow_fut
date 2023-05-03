@@ -12,4 +12,4 @@ jobs:
       options: --cpus 1
     steps:
       - name: Run Java File
-        run: java /app/LeerInfo
+        run: cd /app && java LeerInfo
