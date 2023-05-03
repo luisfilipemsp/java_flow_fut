@@ -3,8 +3,8 @@ FROM openjdk:8-jre-alpine
 
 WORKDIR /app
 
-COPY . /app 
+COPY . .
 
-RUN javac LeerInfo.java 
+RUN javac ./LeerInfo.java 
 
 CMD ["java", "LeerInfo"]
