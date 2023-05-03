@@ -1,0 +1,15 @@
+name: CI
+on:
+  push:
+    branches: [ main ]
+jobs:
+  container-test-job:
+    runs-on: ubuntu-latest
+    container:
+      image: lfmsp/java_flow_fut:v1
+      env:
+        NODE_ENV: development
+      options: --cpus 1
+    steps:
+      - name: Run Java File
+        run: java /app/LeerInfo.java
