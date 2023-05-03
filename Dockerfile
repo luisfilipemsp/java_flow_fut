@@ -5,6 +5,6 @@ WORKDIR /app
 
 COPY . .
 
-RUN javac ./LeerInfo.java 
+RUN javac /app/LeerInfo.java 
 
 CMD ["java", "LeerInfo"]
